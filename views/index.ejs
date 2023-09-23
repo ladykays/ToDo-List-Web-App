@@ -1,23 +1,22 @@
-<%- include("partials/header.ejs") %>
-
-<h2>
-  <%= day %>, <%= month %> <%= new Date().getDate() %>
-</h2>
-
-<div class="form">
-  <form action="/" class="item" method="POST">
-    <input type="text" name="newItem" placeholder="New Item">
-    <button type="submit" name = "list" > + </button>
-  </form>
+<%- include('partials/header.ejs') %>
+<div class="container">
+  <div class="title">
+    <h1>
+      <%= todaysDate %>rd
+    </h1>
+  </div>
+  <div class="form">
+    <%- include("partials/form.ejs") %>
+    
+    <!-- Display added list items -->
+    <% for(let item of locals.todoList) { %>
+      <div class="list">
+        <input type="checkbox" name="checkbox">
+        <span><%= item %></span>
+      </div>
+    <% } %>
+    
+  </div>
 </div>
 
-<div class="list">
-  <% for(let item of locals.todoList) { %>
-    <p>
-      <input type="checkbox">
-      <label for="<%= item %>"><%= item %></label> <!-- strike through text if checkbox is clicked -->
-  <% } %>
-</div>
-
-
-<%- include("partials/footer.ejs") %>
+<%- include('partials/footer.ejs') %>

@@ -1,21 +1,23 @@
 <%- include("partials/header.ejs") %>
 
-<h1>Work</h1>
-<div class="form">
-  <form action="/work" class="item" method="POST">
-    <input type="text" name="newItem" placeholder="New Item">
-    <button type="submit" name = "list" > + </button>
-  </form>
+<div class="container">
+  <div class="title">
+    <h2>
+      Work List
+    </h2>
+  </div>
+  <div class="form">
+    <%- include("partials/form.ejs") %>
+    
+    <!-- Display added list items -->
+    <% for(let workItem of locals.workList) { %>
+      <div class="list">
+        <input type="checkbox" name="checkbox">
+        <span><%= workItem %></span>
+      </div>
+    <% } %>
+    
+  </div>
 </div>
-
-<div class="list">
-  <% for(let workItem of locals.workTodoList) { %>
-    <p><input type="checkbox" name="completed"><%= workItem %></p>
-  <% } %>
-</div>
-<ul>
 
 <%- include("partials/footer.ejs") %>
- 
-  
-

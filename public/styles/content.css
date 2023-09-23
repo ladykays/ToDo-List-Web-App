@@ -1,9 +1,36 @@
-h1 {
-  color: red;
+body {
+  background-color: aquamarine;
+}
+
+footer {
+  color:coral;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   text-align: center;
 }
 
-input:checked + label {
+.container {
+  background-color: bisque;
+  border: 1vmin solid; 
+  box-sizing: border-box;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  margin-top:5vh;
+  margin-bottom: 5vh;
+  height: 80vh; /* set the height of the container to 80 viewport height */
+  overflow-y: hidden; /* change to scroll if needed */
+  overflow-x: hidden;
+} 
+
+/* Strike through list item if checkbox is checked */
+input:checked + span {
   text-decoration: line-through;
   font-style: italic;
+  color: brown;
 }
