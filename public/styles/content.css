@@ -3,3 +3,7 @@ h1 {
   text-align: center;
 }
 
+input:checked + label {
+  text-decoration: line-through;
+  font-style: italic;
+}
