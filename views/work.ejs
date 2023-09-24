@@ -1,22 +1,23 @@
 <%- include("partials/header.ejs") %>
 
 <div class="container">
-  <div class="title">
-    <h2>
+  <div class="title d-flex justify-content-center">
+    <h1>
       Work List
-    </h2>
+    </h1>
   </div>
   <div class="form">
     <%- include("partials/form.ejs") %>
     
     <!-- Display added list items -->
+    <div class="list">
     <% for(let workItem of locals.workList) { %>
-      <div class="list">
+      <div class="list-item mb-3">
         <input type="checkbox" name="checkbox">
         <span><%= workItem %></span>
       </div>
     <% } %>
-    
+    </div>
   </div>
 </div>
 

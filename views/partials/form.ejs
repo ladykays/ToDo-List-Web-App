@@ -3,7 +3,10 @@
 <% } else { %>
   <form action="/work" class="item" id="myForm" method="POST">
 <% } %>
-  <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
-  <button type="submit" name="add">+</button>
+    <div class="d-flex flex-row justify-content-center">
+      <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+  <button type="submit" name="add" class="add-button ms-2">+</button>
+    </div>
+  
 </form>
 

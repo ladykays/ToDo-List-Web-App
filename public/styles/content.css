@@ -1,5 +1,33 @@
+html {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
 body {
-  background-color: aquamarine;
+  background: linear-gradient( rgba(211, 10, 10, 0.347), rgba(93, 62, 230, 0.56) ), url("/images/bg2.png"); 
+  -webkit-background-size: cover;
+  -moz-background-size:  cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: cornflowerblue;
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color:coral; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
 }
 
 footer {
@@ -10,27 +38,94 @@ footer {
   text-align: center;
 }
 
+.nav-link {
+  color: purple;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: palevioletred;
+}
+
 .container {
-  background-color: bisque;
+  /* background-color: gray;
+  opacity: 0.9;
   border: 1vmin solid; 
-  box-sizing: border-box;
+  box-sizing: border-box;  */
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  align-items: center;
-  margin-top:5vh;
-  margin-bottom: 5vh;
-  height: 80vh; /* set the height of the container to 80 viewport height */
-  overflow-y: hidden; /* change to scroll if needed */
-  overflow-x: hidden;
+  margin-top:10vh;
+  margin-bottom: 5vh; 
 } 
+
+
+
+/* form.ejs styles */
+.item {
+  margin: 1rem auto;
+  max-width: 80%;
+}
+
+input[type="text"] {
+  border: none;
+  color: purple;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;;
+  height: 3rem;
+  padding: 10px;
+  text-align: center;
+  width: 80%;
+}
+
+::placeholder {
+  color:purple;
+  opacity: 0.8;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+}
+
+.add-button {
+  border: none;
+  background-color: purple;
+  border-radius: 50%;
+  color: aliceblue;
+  font-size: 1.8rem;
+  height: 50px;
+  width: 50px;
+}
+
+
+/* index.ejs styles */
+.form {
+  width: 100%;
+  padding: 1rem;
+}
+
+.list {
+  background-color: palevioletred;
+  color:aliceblue;
+  font-size: 1.4rem;
+  margin: 0rem auto;
+  max-width: 70%;
+  padding: 0.5rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.list-item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 
 /* Strike through list item if checkbox is checked */
 input:checked + span {
   text-decoration: line-through;
   font-style: italic;
   color: brown;
+}
+
+.title {
+  color: aliceblue;
 }

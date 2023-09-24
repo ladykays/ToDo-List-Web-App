@@ -1,21 +1,20 @@
 <%- include('partials/header.ejs') %>
 <div class="container">
-  <div class="title">
-    <h1>
-      <%= todaysDate %>rd
-    </h1>
+  <div class="title d-flex justify-content-center">
+    <h1><%= todaysDate %></h1>
   </div>
   <div class="form">
     <%- include("partials/form.ejs") %>
-    
+
     <!-- Display added list items -->
-    <% for(let item of locals.todoList) { %>
-      <div class="list">
-        <input type="checkbox" name="checkbox">
+    <div class="list">
+      <% for(let item of locals.todoList) { %>
+      <div class="list-item mb-3">
+        <input type="checkbox" name="checkbox" />
         <span><%= item %></span>
       </div>
-    <% } %>
-    
+      <% } %>
+    </div>
   </div>
 </div>
 

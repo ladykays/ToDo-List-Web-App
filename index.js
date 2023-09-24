@@ -1,5 +1,6 @@
 import express from 'express';
 
+
 const app = express();
 let port = 3000;
 const listItems = [];
@@ -12,7 +13,7 @@ app.use(express.urlencoded()); //use this to avoid "Cannot read properties of un
 
 app.get("/", (req, res) => {
   //generate a string that represents the current date in the format "Weekday, Month Day," where "Weekday" is the full weekday name, "Month" is the full month name, and "Day" is the numeric day of the month.
-  let date = new Date().toLocaleDateString("en", {
+  let date = new Date().toLocaleDateString("en-us", {
     weekday: "long",
     month: "long",
     day: "numeric",
