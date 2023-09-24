@@ -11,9 +11,9 @@ This is a basic ToDo List web application which I have created using Node.js, Ex
 * HTML
 
 ## Screenshot
-![Screenshot](./images/screenshot.png)
+![Screenshot](public/images/screenshot.png)
 
-![Screenshot](./images/screenshot_2.png)
+![Screenshot](public/images/screenshot_2.png)
 
 ## Deployed Page
 
