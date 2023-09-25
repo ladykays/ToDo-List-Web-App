@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
     month: "long",
     day: "numeric",
   }); 
+
   res.render("index.ejs", {
     todaysDate: date,
     todoList: listItems,

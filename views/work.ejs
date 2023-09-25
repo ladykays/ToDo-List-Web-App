@@ -1,22 +1,19 @@
 <%- include("partials/header.ejs") %>
-
 <div class="container">
   <div class="title d-flex justify-content-center">
-    <h1>
-      Work List
-    </h1>
+    <h1>Work List</h1>
   </div>
   <div class="form">
     <%- include("partials/form.ejs") %>
-    
+
     <!-- Display added list items -->
-    <div class="list">
-    <% for(let workItem of locals.workList) { %>
+    <div class="list mx-auto overflow-x-auto overflow-y-auto">
+      <% for(let workItem of locals.workList) { %>
       <div class="list-item mb-3">
-        <input type="checkbox" name="checkbox">
+        <input type="checkbox" name="checkbox" />
         <span><%= workItem %></span>
       </div>
-    <% } %>
+      <% } %>
     </div>
   </div>
 </div>

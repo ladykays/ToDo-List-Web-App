@@ -1,12 +1,19 @@
 <% if (isHome) { %>
-  <form action="/" class="item" id="myForm" method="POST">
-<% } else { %>
+<form action="/" class="item" id="myForm" method="POST">
+  <% } else { %>
   <form action="/work" class="item" id="myForm" method="POST">
-<% } %>
+    <% } %>
     <div class="d-flex flex-row justify-content-center">
-      <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
-  <button type="submit" name="add" class="add-button ms-2">+</button>
+      <input
+        type="text"
+        name="newItem"
+        placeholder="New Item"
+        autocomplete="off"
+        class="input-box w-100"
+      />
+      <button type="submit" name="add" class="add-item add-button border-0 rounded-circle ms-2">
+        +
+      </button>
     </div>
-  
+  </form>
 </form>
-

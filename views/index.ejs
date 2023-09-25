@@ -7,7 +7,7 @@
     <%- include("partials/form.ejs") %>
 
     <!-- Display added list items -->
-    <div class="list">
+    <div class="list mx-auto overflow-x-auto overflow-y-auto">
       <% for(let item of locals.todoList) { %>
       <div class="list-item mb-3">
         <input type="checkbox" name="checkbox" />
@@ -19,4 +19,3 @@
 </div>
 
 <%- include('partials/footer.ejs') %>
-
