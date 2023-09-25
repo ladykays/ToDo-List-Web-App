@@ -15,8 +15,11 @@ This is a basic ToDo List web application which I have created using Node.js, Ex
 
 ![Screenshot](public/images/screenshot_2.png)
 
-## Deployed Page
-
+## Live Application
+[ToDo List App](https://todo-app-uhqm.onrender.com)
 
 ## Credits
 * <a href="https://www.freepik.com/free-vector/task-management-abstract-concept-illustration_11668613.htm#query=todo&position=21&from_view=search&track=sph">Image by vectorjuice</a> on Freepik
+
+## Licence
+Please refer to LICENCE in the repository
