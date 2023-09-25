@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-let port = 3000;
+const PORT= process.env.PORT || 3030;
 
 const listItems = [];
 const workListItems = [];
@@ -46,6 +46,6 @@ app.post("/work", (req, res) => {
   res.redirect("/work");
 });
 
-app.listen(port, () => {
-  console.log(`listening on port ${port}`);
-})
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
+});
