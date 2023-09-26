@@ -1,4 +1,7 @@
 # ToDo-List-Web-App
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+## Description
 This is a basic ToDo List web application which I have created using Node.js, Express.js and EJS. The application  allows users to add tasks to their todo list and strike out completed tasks.
 
 ## Technologies Used
@@ -8,7 +11,6 @@ This is a basic ToDo List web application which I have created using Node.js, Ex
 * JavaScript
 * Bootstrap 5
 * CSS
-* HTML
 
 ## Screenshot
 ![Screenshot](public/images/screenshot.png)
